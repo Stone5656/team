@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="京都テック,セキュリティサークル,IT">
+  <meta name="description" content="セキュリティサークルの紹介サイトです">
+  <meta name="format-detection" content="telephone=no">
+  
+	<title>セキュリティサークル紹介</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="JavaScript" href="./script.js">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">
+		  <a href="../index.html">
+        <img src="../img/security_key_37451-300x300.jpg">
+      </a>
+    </h1>
+    <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+    <label for="navToggle" class="btn-burger"></label>
+    <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="../index.html" title="TOPページ">TOPページ</a></li>
+      <li><a href="about" title="サークル紹介">サークル紹介</a></li>
+      <li><a href="topic" title="お知らせ">お知らせ</a></li>
+      <li><a href="project" title="進行中プロジェクト">進行中プロジェクト</a></li>
+      <li>お問い合わせ</li>
+    </ul>
+      
+    </nav>
+  </header>
+
+	<main>
+    <form @submit.prevent="submitForm" class="form">
+      <div class="form-group">
+        <label for="name" class="form-label">お名前</label>
+        <input type="text" id="name" v-model="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email" class="form-label">メールアドレス</label>
+        <input type="email" id="email" v-model="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="message" class="form-label">メッセージ</label>
+        <textarea id="message" v-model="message" rows="10" cols="30" required></textarea>
+      </div>
+  
+      <button type="submit" class="form-btn">送信</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-logo">
+      <a href="../index.html">
+      <img src="../img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校">
+      </a>
+    </p>
+    <div class="footer-sns">
+      <a href="#" target ="_blank"><img src="../img/Discord.png" alt="Discord"></a>
+      <a href="#" target ="_blank"><img src="../img/instagram.png" alt="instagram"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

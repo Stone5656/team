@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body{
+    max-width: 100%;
+}
+
+.header{
+    position: relative;
+    padding: 15px 0 0;
+    background-color: #fff;
+}
+
+.logo{
+    width: 140px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 140px;
+}
+.nav-toggle{
+    display: none;
+}
+
+.btn-burger{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url("../img/burger.png") center center / 35px 20px no-repeat;
+    cursor: pointer;
+}
+
+.nav-toggle:checked ~ .btn-burger{
+    background: url("../img/cloce.svg.svg") center center / 26px 26px no-repeat;
+}
+
+.nav{
+    padding-top: 10px; 
+    background: url("../img/nav_bur.svg") center center / cover no-repeat;
+}
+.nav-list{
+    display: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.nav-list li{
+    margin: 0;
+    padding: 10px;
+}
+.nav-list a{
+    display: block;
+}
+
+.nav-toggle:checked ~ .nav .nav-list{
+    display: block;
+}
+
+.footer{
+    padding: 40px 0 30px;
+    color: #000;
+    text-align: center;
+    background: url("../img/footer_bg.svg") center center / cover no-repeat;
+}
+.footer img{
+    width: 80%;
+    height: 80%;
+}
+.footer-logo{
+    margin-bottom: 10px;
+}
+.footer-sns{
+    margin: 20px 0;
+}
+.footer-sns img{
+    width: 10%;
+    height: 10%;
+    padding-left: 16px;
+}
