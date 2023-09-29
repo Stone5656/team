@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,8 +46,8 @@
 
     <section class="introduction-section">
       <!-- サークルの紹介の内容を記述 -->
-      <h2>活動内容</h2>
-      <p>
+      <h2 class="bg-yellow-500 text-center">活動内容</h2>
+      <p class="text-center">
         本サークルでは、幅広い知識の習得、<br>
         他専攻および他分野との関わり合いの場、<br>
         イベントや産学連携プロジェクトの拠点を目的として活動しています。
@@ -54,7 +55,7 @@
     </section>
 
     <section class="event-section">
-      <h2>最新のイベント情報</h2>
+      <h2 class="bg-yellow-500 text-center">最新のイベント情報</h2>
       <ul>
         <!-- 最新のイベント情報の見出しを表示するコード -->
         <li><a href="./topic/index.html#event1">イベント1</a></li>
@@ -65,23 +66,23 @@
 
     <section class="contact-section">
       <!-- お問い合わせの内容を記述 -->
-      <p>お問い合わせについては<a href="./contact/index.html">こちら</a></p>
+      <p class="text-center text-gray-500">お問い合わせについては<a class="text-blue-900" href="./contact/index.html">こちら</a></p>
     </section>
   
   </section>
   </div>
   </main>
 
-  <footer class="footer">
-    <p class="footer-logo">
-      <a href="./index.html">
-      <img src="img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校">
+  <footer class="py-10 px-0 pb-7.5 text-black text-center bg-center bg-no-repeat bg-cover" style="background-image: url('../img/footer_bg.svg');">
+    <p class="footer-logo mb-2.5">
+      <a href="index.html">
+        <img src="img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校" class="w-4/5 h-4/5">
       </a>
     </p>
-    <div class="footer-sns">
-      <a href="#" target ="_blank"><img src="img/Discord.png" alt="Discord"></a>
-      <a href="#" target ="_blank"><img src="img/instagram.png" alt="instagram"></a>
-    </div>
-    </footer>
+    <ul class="footer-sns flex justify-center">
+      <li><a href="#" target="_blank"><img src="img/Discord.png" alt="Discord" class="w-40 h-32 ml-4"></a></li>
+      <li><a href="#" target="_blank"><img src="img/instagram.png" alt="instagram" class="w-40 h-32 ml-4"></a></li>
+    </ul>
+  </footer>
 </body>
 </html>

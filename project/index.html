@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -58,68 +59,68 @@
     -->
     <section class="project-section">
 
-      <h1>進行中のプロジェクト</h1>
-      <section class="project-info">
-        <h2>AI部門</h2>
+      <h1 class="text-center">進行中のプロジェクト</h1>
+      <section class="border border-black text-center">
+        <h2 class="bg-yellow-500">AI部門</h2>
         <p>プロジェクト: NAO×ChatGPT</p>
   
-        <h2>プロジェクト概要</h2>
+        <h2 class="bg-yellow-500">プロジェクト概要</h2>
         <p>GPT-3.5turboに対して、学校のことについて学習したAIを制作することを目標にしている。</p>
   
-        <h2>メンバー</h2>
-        <ul class="project-member">
-          <li>リーダー：木本 侑希</li>
-          <li>メンバー：木崎 翔太</li>
-          <li>メンバー：吉見 仁那</li>
+        <h2 class="bg-yellow-500">メンバー</h2>
+        <ul class="p-0">
+          <li class="text-center">リーダー：木本 侑希</li>
+          <li class="text-center">メンバー：木崎 翔太</li>
+          <li class="text-center">メンバー：吉見 仁那</li>
         </ul>
   
-        <h2>進捗状況</h2>
-        <ul>
-          <li>Durable Functions C#プログラム：完了</li>
-          <li>ChatGPTに学校の情報を与える：完了</li>
-          <li>NAOプログラム：完了</li>
-          <li>起動トリガーを音声にする：完了</li>
-          <li>Durable FunctionsのAPIをAzureOpenAIに置き換える：進行中</li>
-          <li>ChatGPTに与える情報を増やす：進行中</li>
-          <li>LangchainのプログラムをAzure Functionsに移行する：進行中</li>
-          <li>Djangoを使用したチャットボットアプリ制作：進行中</li>
+        <h2 class="bg-yellow-500">進捗状況</h2>
+        <ul class="w-3/4 mx-auto my-0">
+          <li class="list-none text-center">Durable Functions C#プログラム：完了</li>
+          <li class="list-none text-center">ChatGPTに学校の情報を与える：完了</li>
+          <li class="list-none text-center">NAOプログラム：完了</li>
+          <li class="list-none text-center">起動トリガーを音声にする：完了</li>
+          <li class="list-none text-center">Durable FunctionsのAPIをAzureOpenAIに置き換える：進行中</li>
+          <li class="list-none text-center">ChatGPTに与える情報を増やす：進行中</li>
+          <li class="list-none text-center">LangchainのプログラムをAzure Functionsに移行する：進行中</li>
+          <li class="list-none text-center">Djangoを使用したチャットボットアプリ制作：進行中</li>
         </ul>
       </section>
   
-      <section class="project-info">
-        <h2>ものづくり部門</h2>
+      <section class="border border-black text-center">
+        <h2 class="bg-yellow-500">ものづくり部門</h2>
         <p>プロジェクト名: UFOキャッチャー制作</p>
   
-        <h2>プロジェクト概要</h2>
+        <h2 class="bg-yellow-500">プロジェクト概要</h2>
         <p>学園祭などのイベントで、楽しみながらプログラミングを学ぶことができるようにUFOキャッチャーの筐体を制作。</p>
   
-        <h2>メンバー</h2>
-        <ul class="project-member">
-          <li>リーダー：田中 良日斗</li>
+        <h2 class="bg-yellow-500">メンバー</h2>
+        <ul class="p-0">
+          <li class="text-center">リーダー：田中 良日斗</li>
         </ul>
   
-        <h2>進捗状況</h2>
-        <ul>
-          <li>RaspberryPiセットアップ：完了</li>
-          <li>プログラミングコード設計：進行中</li>
-          <li>電気系統の設計：進行中</li>
-          <li>3Dモデル制作：進行中</li>
+        <h2 class="bg-yellow-500">進捗状況</h2>
+        <ul class="w-1/2 mx-auto my-0">
+          <li class="list-none text-center">RaspberryPiセットアップ：完了</li>
+          <li class="list-none text-center">プログラミングコード設計：進行中</li>
+          <li class="list-none text-center">電気系統の設計：進行中</li>
+          <li class="list-none text-center">3Dモデル制作：進行中</li>
         </ul>
       </section>
   
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="footer-logo">
+  <footer class="py-10 px-0 pb-7.5 text-black text-center bg-center bg-no-repeat bg-cover" style="background-image: url('../img/footer_bg.svg');">
+    <p class="footer-logo mb-2.5">
       <a href="../index.html">
-      <img src="../img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校">
+        <img src="../img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校" class="w-4/5 h-4/5">
       </a>
     </p>
-    <div class="footer-sns">
-      <a href="#" target ="_blank"><img src="../img/Discord.png" alt="Discord"></a>
-      <a href="#" target ="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-    </div>
+    <ul class="footer-sns flex justify-center">
+      <li><a href="#" target="_blank"><img src="../img/Discord.png" alt="Discord" class="w-40 h-32 ml-4"></a></li>
+      <li><a href="#" target="_blank"><img src="../img/instagram.png" alt="instagram" class="w-40 h-32 ml-4"></a></li>
+    </ul>
   </footer>
 
 </body>

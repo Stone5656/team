@@ -71,24 +71,3 @@ body{
     display: block;
 }
 
-.footer{
-    padding: 40px 0 30px;
-    color: #000;
-    text-align: center;
-    background: url("../img/footer_bg.svg") center center / cover no-repeat;
-}
-.footer img{
-    width: 80%;
-    height: 80%;
-}
-.footer-logo{
-    margin-bottom: 10px;
-}
-.footer-sns{
-    margin: 20px 0;
-}
-.footer-sns img{
-    width: 10%;
-    height: 10%;
-    padding-left: 16px;
-}

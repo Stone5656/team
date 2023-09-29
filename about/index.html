@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,11 +54,11 @@
 
     </section>
   -->
-  <div class="member-profile-a">
-  <section class="member-profile">
+  <div class="flex flexnowrap">
+  <section class="w-1/2 border border-black">
 
     <div class="member">
-      <img src="/img/IMG_1449.jpg" alt="ヤスダ　ジョウ">
+      <img class="w-1/4 h-1/4 border border-black" src="/img/IMG_1449.jpg" alt="ヤスダ　ジョウ">
       <h3>ヤスダ　ジョウ</h3>
       <p>１年　プログラマー専攻</p>
       <ul class="achievements">
@@ -68,10 +69,10 @@
     </div>
     
   </section>
-    <section class="member-profile">
+    <section class="w-1/2 border border-black">
 
     <div class="member">
-      <img src="/img/Default.png" alt="カガワ　アユミ">
+      <img class="max-w-1/5 max-h-1/5 border border-black" src="/img/Default.png" alt="カガワ　アユミ">
       <h3>カガワ　アユミ</h3>
       <p>１年　ホワイトハッカー専攻</p>
       <ul class="achievements">
@@ -85,17 +86,17 @@
   </div>
 </main>
 
-  <footer class="footer">
-    <p class="footer-logo">
-      <a href="../index.html">
-      <img src="../img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校">
-      </a>
-    </p>
-    <div class="footer-sns">
-      <a href="#" target ="_blank"><img src="../img/Discord.png" alt="Discord"></a>
-      <a href="#" target ="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-    </div>
-  </footer>
+<footer class="py-10 px-0 pb-7.5 text-black text-center bg-center bg-no-repeat bg-cover" style="background-image: url('../img/footer_bg.svg');">
+  <p class="footer-logo mb-2.5">
+    <a href="../index.html">
+      <img src="../img/header_logo_sp.svg" alt="京都デザイン&テクノロジー専門学校" class="w-4/5 h-4/5">
+    </a>
+  </p>
+  <ul class="footer-sns flex justify-center">
+    <li><a href="#" target="_blank"><img src="../img/Discord.png" alt="Discord" class="w-40 h-32 ml-4"></a></li>
+    <li><a href="#" target="_blank"><img src="../img/instagram.png" alt="instagram" class="w-40 h-32 ml-4"></a></li>
+  </ul>
+</footer>
 
 </body>
 </html>
